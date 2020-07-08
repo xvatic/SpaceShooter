@@ -17,6 +17,10 @@
 		D01A9406247813770006F0B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01A9404247813770006F0B6 /* LaunchScreen.storyboard */; };
 		D01A9411247813780006F0B6 /* SpaceShooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01A9410247813780006F0B6 /* SpaceShooterTests.swift */; };
 		D01A941C247813780006F0B6 /* SpaceShooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01A941B247813780006F0B6 /* SpaceShooterUITests.swift */; };
+		D065403B24B62AA0008CB725 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D065403924B62AA0008CB725 /* torpedo.mp3 */; };
+		D065403C24B62AA0008CB725 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D065403A24B62AA0008CB725 /* explosion.mp3 */; };
+		D065404124B62B30008CB725 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = D065403F24B62B30008CB725 /* Explosion.sks */; };
+		D065404224B62B30008CB725 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = D065404024B62B30008CB725 /* Starfield.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		D01A9417247813780006F0B6 /* SpaceShooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceShooterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01A941B247813780006F0B6 /* SpaceShooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShooterUITests.swift; sourceTree = "<group>"; };
 		D01A941D247813780006F0B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D065403924B62AA0008CB725 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		D065403A24B62AA0008CB725 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		D065403F24B62B30008CB725 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		D065404024B62B30008CB725 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +111,11 @@
 		D01A93F4247813750006F0B6 /* SpaceShooter */ = {
 			isa = PBXGroup;
 			children = (
+				D065403A24B62AA0008CB725 /* explosion.mp3 */,
+				D065403924B62AA0008CB725 /* torpedo.mp3 */,
 				D01A93F5247813750006F0B6 /* AppDelegate.swift */,
+				D065403F24B62B30008CB725 /* Explosion.sks */,
+				D065404024B62B30008CB725 /* Starfield.sks */,
 				D01A93F7247813750006F0B6 /* GameScene.sks */,
 				D01A93F9247813750006F0B6 /* Actions.sks */,
 				D01A93FB247813750006F0B6 /* GameScene.swift */,
@@ -202,13 +214,16 @@
 				TargetAttributes = {
 					D01A93F1247813750006F0B6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1150;
 					};
 					D01A940B247813780006F0B6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1150;
 						TestTargetID = D01A93F1247813750006F0B6;
 					};
 					D01A9416247813780006F0B6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1150;
 						TestTargetID = D01A93F1247813750006F0B6;
 					};
 				};
@@ -242,6 +257,10 @@
 				D01A93F8247813750006F0B6 /* GameScene.sks in Resources */,
 				D01A9403247813770006F0B6 /* Assets.xcassets in Resources */,
 				D01A9406247813770006F0B6 /* LaunchScreen.storyboard in Resources */,
+				D065403C24B62AA0008CB725 /* explosion.mp3 in Resources */,
+				D065404124B62B30008CB725 /* Explosion.sks in Resources */,
+				D065404224B62B30008CB725 /* Starfield.sks in Resources */,
+				D065403B24B62AA0008CB725 /* torpedo.mp3 in Resources */,
 				D01A93FA247813750006F0B6 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4GQMA83JR;
 				INFOPLIST_FILE = SpaceShooter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,7 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = evg.SpaceShooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -462,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4GQMA83JR;
 				INFOPLIST_FILE = SpaceShooter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +490,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = evg.SpaceShooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -488,7 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = evg.SpaceShooterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceShooter.app/SpaceShooter";
 			};
@@ -508,7 +529,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = evg.SpaceShooterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceShooter.app/SpaceShooter";
 			};
@@ -527,7 +548,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = evg.SpaceShooterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SpaceShooter;
 			};
@@ -546,7 +567,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = evg.SpaceShooterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SpaceShooter;
 			};
